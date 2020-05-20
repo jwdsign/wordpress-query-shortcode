@@ -28,4 +28,5 @@ function custom_query_shortcode($atts) {
   $html = '<div class="query--container">'.implode('', $result).'</div>';
   return $html;
   }
+  add_shortcode('loop', 'custom_query_shortcode');
 ?>
